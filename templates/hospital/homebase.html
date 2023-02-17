@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hospital || Mustafa</title>
+  </head>
+
+  <body class="body">
+    <div class="navbar">{% include "hospital/navbar.html" %}</div>
+    <div class="content">{%block content%} {%endblock content%}</div>
+
+    <div class="footer">{% include "hospital/footer.html" %}</div>
+    <style>
+      .navbar {
+      }
+    
+      .body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: auto;
+      }
+      .content {
+      }
+      .footer {
+        height: 40px;
+      }
+    </style>
+  </body>
+</html>
